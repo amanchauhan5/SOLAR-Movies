@@ -1,0 +1,99 @@
+/* Base styling for the entire navbar */
+.navbar {
+    color: lightcyan;
+    background-color: #395861; /* Dark background for contrast */
+    
+    padding: 0.8rem 1rem;
+    box-shadow: 0 4px 8px rgba(91, 113, 220, 0.196); /* Adds a subtle shadow */
+    transition: background-color 0.3s ease;
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  }
+  
+  .navbar-brand {
+    color: #f8f9fa; /* Light text for brand */
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    color: #f0a500; /* Gold color on hover */
+  }
+  
+  .nav-link {
+    color: #adb5bd; /* Light grey for nav links */
+    font-size: 1rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+ 
+  
+  .nav-link:hover {
+    color: #a4b0bd; /* Light text on hover */
+  }
+
+  /* .justify-rigth{
+    color: #f8f9fa;
+  }
+  .justify-rigth:hover{
+    
+    background-color: #6cbae3;
+  } */
+  #button-addon1{
+    color:black;
+    align-items:flex-end;
+    border: 1px;
+    border-radius: 25%;
+  }
+  .navbar-toggler {
+    border-color: #f8f9fa; /* Light color for toggler border */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23f8f9fa' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Custom icon for toggler with light color */
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end; /* Align nav items to the right */
+  }
+  
+  /* Dropdown styles */
+  .navbar .dropdown-menu {
+    background-color: #6cbae3; /* Darker background for dropdown */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .dropdown-item {
+    color: #f8f9fa; /* Light text for dropdown items */
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .dropdown-item:hover {
+    background-color: #343a40; /* Slightly darker on hover */
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      background-color: #343a40; /* Dark background for collapse on smaller screens */
+      padding: 1rem;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .nav-link {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+  }
+  

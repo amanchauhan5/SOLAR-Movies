@@ -1,0 +1,57 @@
+/* Container for the genre input and buttons */
+.GenreInput {
+  background-color: #a3dfde;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(56, 51, 51, 0.2);
+  max-width: 500px;
+  width: 100%;
+  
+  margin-left: 35%;
+  margin-top: 100px;
+  margin-bottom: auto;
+  }
+  
+  /* Input text box styling */
+  #genrebox {
+    flex-grow: 1; /* Allows input to take up available space */
+    padding: 0.5rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  #genrebox:focus {
+    border-color: #89b0d9; /* Change border color on focus */
+    outline: none;
+  }
+  
+  /* Button styling */
+  #genrebtn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #8c7be0; /* Bootstrap primary color */
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #genrebtn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .GenreInput {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    #genrebtn, #genrebox {
+      width: 100%;
+    }
+  }
+  
